@@ -8,30 +8,33 @@
 	<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
 	<meta charset=utf-8 />
-
+	<title>
+		UB Hacking 22
+	</title>
 	<script src="{{ url_for('static', filename='upload.js') }}"></script>
 
-	<style>
-		article,
-		aside,
-		figure,
-		footer,
-		header,
-		hgroup,
-		menu,
-		nav,
-		section {
-			display: block;
-		}
-	</style>
+
 </head>
 
-<body>
-	<form action="http://127.0.0.1:5000/uploader" method="POST" enctype="multipart/form-data">
-		<input type='file' name='file' onchange="readURL(this);" />
-		<img id="blah" src="#" alt="your image" />
-		<button type="submit">Submit & predict</button>
+<body style="background-color:#1764d3;">
+	<h1>
+		<font size="6"
+			  face="times new roman"
+			  color="#ffffff">
+          		<center>UB Hacking 22</center>
+    	</font>
+	</h1>
 
+	<form action="http://127.0.0.1:5000/uploader" method="POST" enctype="multipart/form-data">
+
+		<center>
+			<br><br><br>
+		<input type='file' name='file' onchange="readURL(this);" />
+			<br><br><br><br>
+		<img id="blah" src="#" alt="your image" />
+		<br><br><br><br>
+		<button type="submit">Submit & predict</button>
+		</center>
 	</form>
 </body>
 
